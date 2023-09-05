@@ -2,6 +2,9 @@
 This is a Rich UI design library using QtQuick2 (QML) with Qt6 Dependency.
 
 # Example
+    An example App usign this library.
+
+![image](https://github.com/HackerShohag/FloatUI/assets/47150885/ad617526-057f-4adf-ab56-96cdbdd5ecae)
 
 ## CMakeLists.txt file
 Add the git module as a subdirecoty to build it:
