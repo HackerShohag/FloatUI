@@ -5,11 +5,14 @@ This is a Rich UI design library using QtQuick2 (QML) with Qt6 Dependency.
 
 ## CMakeLists.txt file
 Add the git module as a subdirecoty to build it:
+
     add_subdirectory(path/to/this/project)
 Link the library to your project:
+
     target_link_libraries(ExampleProject PRIVATE FloatUIplugin)
 
 ## Use it in main.qml file
+
     import FloatUI
     FloatWindow {
         windowHeader: Item {
@@ -45,6 +48,7 @@ Note that some of the properties are predefined, so use it cautiously. A detaile
 
 #Compiling the example project
 Uncomment the lines from `# Example Project` to the last line to compile this project as an standalone application.
+
     qt_add_executable(ExampleProject example/example.cpp)
     qt_add_qml_module(ExampleProject
         URI ExampleProjectApp
