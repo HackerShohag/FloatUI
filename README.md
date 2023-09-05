@@ -50,7 +50,7 @@ Link the library to your project:
 Note that some of the properties are predefined, so use it cautiously. A detailed example can be found in the example dir.
 
 #Compiling the example project
-Uncomment the lines from `# Example Project` to the last line to compile this project as an standalone application.
+Uncomment the lines from `# Example Project` to the last line in `CMakeLists.txt` to compile this project as an standalone application.
 
     qt_add_executable(ExampleProject example/example.cpp)
     qt_add_qml_module(ExampleProject
