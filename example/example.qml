@@ -29,7 +29,7 @@ FloatWindow {
         OverlayButton {
             id:btn1
             title: "Smart Scan"
-            icon: "qrc:/assets/icons/neuralnet_icon.png"
+            icon: "qrc:/example.png"
             radius: itemRadius / 2
             selected: true
             selectColor: selectedColor
