@@ -4,7 +4,7 @@ This is a Rich UI design library using QtQuick2 (QML) with Qt6 Dependency. This 
 # Example
     An example App using this library `Neural Network Trainer` which trains and see the performance of some predefined Neural Network with some sample data.
 
-![image](https://github.com/HackerShohag/FloatUI/assets/47150885/ad617526-057f-4adf-ab56-96cdbdd5ecae)(https://github.com/HackerShohag/SimpleNeuralNetwork)
+[ ![image](https://github.com/HackerShohag/FloatUI/assets/47150885/ad617526-057f-4adf-ab56-96cdbdd5ecae) ](https://github.com/HackerShohag/SimpleNeuralNetwork)
 
 # To use it with your application
 
