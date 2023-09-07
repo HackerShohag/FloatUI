@@ -7,8 +7,6 @@ import FloatUI
 
 FloatWindow {
 
-    title: "Neural Network"
-
     windowHeader: Item {
         anchors.fill: parent
         Text {
@@ -18,10 +16,6 @@ FloatWindow {
             font.pixelSize: 20
             color: "black"
         }
-    }
-
-    mainContentItem: Item {
-        anchors.fill: parent
     }
 
     menuItem: Item {
@@ -34,6 +28,16 @@ FloatWindow {
             selected: true
             selectColor: selectedColor
             callBackFunction: setRandomGradientValue
+        }
+    }
+
+    mainContentItem: Item {
+        anchors.fill: parent
+        Rectangle {
+            height: 200
+            width: 200
+            anchors.centerIn: parent
+            color: "grey"
         }
     }
 }

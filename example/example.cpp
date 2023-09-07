@@ -2,16 +2,13 @@
 #include <QQmlApplicationEngine>
 #include <QtQml/qqmlextensionplugin.h>
 
-Q_IMPORT_QML_PLUGIN(FloatUIPlugin)
-
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    // The first subfolder is the libraryName followed by the regular
-    // folder structure: LibraryName/Subfolder
-    const QUrl url(u"qrc:/ExampleProjectApp/example/example.qml"_qs);
+
+    const QUrl url(u"qrc:/example.qml"_qs);
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)

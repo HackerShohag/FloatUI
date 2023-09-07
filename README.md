@@ -14,7 +14,7 @@ Add the git module as a subdirecoty to build it:
     add_subdirectory(path/to/this/project)
 Link the library to your project:
 
-    target_link_libraries(ExampleProject PRIVATE FloatUIplugin)
+    target_link_libraries(ExampleProject PRIVATE FloatUI)
 
 ## Use it in main.qml file
 
@@ -54,7 +54,7 @@ Link the library to your project:
 Note that some of the properties are predefined, so use it cautiously. A detailed example can be found in the example dir.
 
 # Compiling the example project
-Uncomment the lines from `# Example Project` to the last line in `CMakeLists.txt` to compile this project as an standalone application.
+You can simply add these lines to `CMakeLists.txt` to compile the example project but there's an complete guide can be found inside example.
 
     qt_add_executable(ExampleProject example/example.cpp)
     qt_add_qml_module(ExampleProject
@@ -62,5 +62,5 @@ Uncomment the lines from `# Example Project` to the last line in `CMakeLists.txt
         VERSION 1.0
         QML_FILES example/example.qml
     )
-    target_link_libraries(ExampleProject PRIVATE Qt6::Quick Qt6::Widgets FloatUIplugin)
+    target_link_libraries(ExampleProject PRIVATE Qt6::Quick Qt6::Widgets FloatUI)
     target_compile_definitions(ExampleProject PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
